@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"uartirq\startup_stm32f103xe.o"
+"uartirq\main.o"
+"uartirq\stm32f1xx_it.o"
+"uartirq\stm32f1xx_hal_msp.o"
+"uartirq\stm32f1xx_hal_gpio_ex.o"
+"uartirq\stm32f1xx_hal_tim.o"
+"uartirq\stm32f1xx_hal_tim_ex.o"
+"uartirq\stm32f1xx_hal_uart.o"
+"uartirq\stm32f1xx_hal.o"
+"uartirq\stm32f1xx_hal_rcc.o"
+"uartirq\stm32f1xx_hal_rcc_ex.o"
+"uartirq\stm32f1xx_hal_gpio.o"
+"uartirq\stm32f1xx_hal_dma.o"
+"uartirq\stm32f1xx_hal_cortex.o"
+"uartirq\stm32f1xx_hal_pwr.o"
+"uartirq\stm32f1xx_hal_flash.o"
+"uartirq\stm32f1xx_hal_flash_ex.o"
+"uartirq\stm32f1xx_hal_exti.o"
+"uartirq\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "uartIRQ\uartIRQ.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "uartIRQ.map" -o uartIRQ\uartIRQ.axf

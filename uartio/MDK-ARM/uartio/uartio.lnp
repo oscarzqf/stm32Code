@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"uartio\startup_stm32f103xe.o"
+"uartio\main.o"
+"uartio\stm32f1xx_it.o"
+"uartio\stm32f1xx_hal_msp.o"
+"uartio\stm32f1xx_hal_gpio_ex.o"
+"uartio\stm32f1xx_hal_tim.o"
+"uartio\stm32f1xx_hal_tim_ex.o"
+"uartio\stm32f1xx_hal_uart.o"
+"uartio\stm32f1xx_hal.o"
+"uartio\stm32f1xx_hal_rcc.o"
+"uartio\stm32f1xx_hal_rcc_ex.o"
+"uartio\stm32f1xx_hal_gpio.o"
+"uartio\stm32f1xx_hal_dma.o"
+"uartio\stm32f1xx_hal_cortex.o"
+"uartio\stm32f1xx_hal_pwr.o"
+"uartio\stm32f1xx_hal_flash.o"
+"uartio\stm32f1xx_hal_flash_ex.o"
+"uartio\stm32f1xx_hal_exti.o"
+"uartio\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "uartio\uartio.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "uartio.map" -o uartio\uartio.axf

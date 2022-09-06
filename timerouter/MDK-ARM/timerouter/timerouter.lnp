@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"timerouter\startup_stm32f103xe.o"
+"timerouter\main.o"
+"timerouter\stm32f1xx_it.o"
+"timerouter\stm32f1xx_hal_msp.o"
+"timerouter\stm32f1xx_hal_gpio_ex.o"
+"timerouter\stm32f1xx_hal_tim.o"
+"timerouter\stm32f1xx_hal_tim_ex.o"
+"timerouter\stm32f1xx_hal.o"
+"timerouter\stm32f1xx_hal_rcc.o"
+"timerouter\stm32f1xx_hal_rcc_ex.o"
+"timerouter\stm32f1xx_hal_gpio.o"
+"timerouter\stm32f1xx_hal_dma.o"
+"timerouter\stm32f1xx_hal_cortex.o"
+"timerouter\stm32f1xx_hal_pwr.o"
+"timerouter\stm32f1xx_hal_flash.o"
+"timerouter\stm32f1xx_hal_flash_ex.o"
+"timerouter\stm32f1xx_hal_exti.o"
+"timerouter\stm32f1xx_hal_uart.o"
+"timerouter\system_stm32f1xx.o"
+--strict --scatter "timerouter\timerouter.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "timerouter.map" -o timerouter\timerouter.axf

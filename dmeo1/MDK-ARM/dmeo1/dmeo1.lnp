@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"dmeo1\startup_stm32f103xe.o"
+"dmeo1\main.o"
+"dmeo1\stm32f1xx_it.o"
+"dmeo1\stm32f1xx_hal_msp.o"
+"dmeo1\stm32f1xx_hal_gpio_ex.o"
+"dmeo1\stm32f1xx_hal_tim.o"
+"dmeo1\stm32f1xx_hal_tim_ex.o"
+"dmeo1\stm32f1xx_hal.o"
+"dmeo1\stm32f1xx_hal_rcc.o"
+"dmeo1\stm32f1xx_hal_rcc_ex.o"
+"dmeo1\stm32f1xx_hal_gpio.o"
+"dmeo1\stm32f1xx_hal_dma.o"
+"dmeo1\stm32f1xx_hal_cortex.o"
+"dmeo1\stm32f1xx_hal_pwr.o"
+"dmeo1\stm32f1xx_hal_flash.o"
+"dmeo1\stm32f1xx_hal_flash_ex.o"
+"dmeo1\stm32f1xx_hal_exti.o"
+"dmeo1\system_stm32f1xx.o"
+--strict --scatter "dmeo1\dmeo1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "dmeo1.map" -o dmeo1\dmeo1.axf
